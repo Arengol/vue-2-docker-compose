@@ -42,9 +42,9 @@ export default {
         13,
         14,
         15,
-        0, // 0 represents the empty space
+        0, // 0 пустая ячейка
       ],
-      emptyIndex: 15, // The index of the empty space (starts at the last position)
+      emptyIndex: 15, // Индекс пустой ячейки при старте приложения
       isWinner: false, // Флаг для отслеживания победы
     };
   },
