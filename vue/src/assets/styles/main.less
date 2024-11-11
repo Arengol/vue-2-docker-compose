@@ -1,5 +1,4 @@
 @import "variables.less";
-@import "mixins.less";
 
 .puzzle {
   display: flex;
@@ -32,16 +31,19 @@
   }
 
   &__button {
+    &:hover {
+      background-color: @button-bg-color-hover;  
+    }
     background-color: @button-bg-color;
     color: white;
     border: none;
-    .rounded-button(); // Использование миксина
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: @font-size-md;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
-
-  &__button:hover {
-    background-color: @button-bg-color-hover;
-  }
-
+  
   &__win-message {
     font-size: @font-size-lg;
     font-weight: bold;
